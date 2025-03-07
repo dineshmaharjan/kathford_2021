@@ -72,8 +72,6 @@
         android:text="Sign in"
         android:textColor="@color/white"
         android:textAllCaps="false"
-
-
         />
 
 
