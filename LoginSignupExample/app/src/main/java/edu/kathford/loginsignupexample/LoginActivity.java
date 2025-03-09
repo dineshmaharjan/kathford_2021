@@ -1,6 +1,7 @@
 package edu.kathford.loginsignupexample;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -77,7 +78,11 @@ public class LoginActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(LoginActivity.this,
                         "Login Successful", Toast.LENGTH_LONG).show();
-                ;
+
+              Intent intent=  new Intent(LoginActivity.this,
+                      SignupActivity.class);
+              startActivity(intent);
+
             }
         }
     }
