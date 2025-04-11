@@ -12,7 +12,8 @@ public class Movie {
                  String name,
                  String language,
                  String genre,
-                 String duration, String imageUrl) {
+                 String duration,
+                 String imageUrl) {
         this.id = id;
         this.name = name;
         this.language = language;
