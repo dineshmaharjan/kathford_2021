@@ -6,17 +6,19 @@ public class Movie {
     private String language;
     private String genre;
     private String duration;
-//    private int imageUrl;
+    private String imageUrl;
 
     public Movie(int id,
                  String name,
                  String language,
-                 String genre, String duration) {
+                 String genre,
+                 String duration, String imageUrl) {
         this.id = id;
         this.name = name;
         this.language = language;
         this.genre = genre;
         this.duration = duration;
+        this.imageUrl = imageUrl;
     }
 
     public void setId(int id) {
@@ -57,5 +59,13 @@ public class Movie {
 
     public void setDuration(String duration) {
         this.duration = duration;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
