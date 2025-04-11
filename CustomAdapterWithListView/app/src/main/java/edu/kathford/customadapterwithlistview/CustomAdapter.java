@@ -21,7 +21,10 @@ public class CustomAdapter extends ArrayAdapter<Movie> {
     private Activity context;
 
 
-    public CustomAdapter(Activity context, ArrayList<Movie> movieArrayList) {
+
+
+    public CustomAdapter(Activity context,
+                         ArrayList<Movie> movieArrayList) {
         super(context, R.layout.item_movie, movieArrayList);
         this.movieArrayList = movieArrayList;
         this.context = context;
