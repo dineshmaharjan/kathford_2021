@@ -26,6 +26,7 @@
         android:drawableStart="@drawable/ic_account"
         android:drawablePadding="8dp"
         android:hint="Mobile Number"
+        android:inputType="phone"
         android:padding="8dp" />
 
     <TextView
