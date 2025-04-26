@@ -54,7 +54,10 @@ public class MainActivity extends AppCompatActivity {
                 String address = addressEditText.getText().toString().trim();
 
                 if (!fullName.isEmpty() && !address.isEmpty()) {
-                    StudentModel studentModel = new StudentModel().setFullName(fullName).setAddress(address);
+                    StudentModel studentModel = new StudentModel();
+
+                    studentModel.setFullName(fullName);
+                    studentModel.setAddress(address);
 
                     long rowId = studentDbHelper.insert(studentModel);
 
@@ -117,8 +120,10 @@ public class MainActivity extends AppCompatActivity {
                 String fullName = fullNameEditText.getText().toString().trim();
                 String address = addressEditText.getText().toString().trim();
 
-                StudentModel studentModel = new StudentModel().setId(Integer.parseInt(id))
-                        .setFullName(fullName).setAddress(address);
+                StudentModel studentModel = new StudentModel();
+                studentModel.setId(Integer.parseInt(id));
+                studentModel.setFullName(fullName);
+                studentModel.setAddress(address);
 
                 int rowId = studentDbHelper.updateStudent(studentModel);
                 if (rowId > 0) {
